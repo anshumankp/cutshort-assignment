@@ -1,28 +1,5 @@
 import { useState, useContext, createContext, useEffect } from "react";
 
-const formHeadingInfo = [
-  {
-    step: 1,
-    title: "Welcome! First things first..",
-    subTitle: "You can always change them later.",
-  },
-  {
-    step: 2,
-    title: "Let's set up a home for all your work",
-    subTitle: "You can always change create another workspace later.",
-  },
-  {
-    step: 3,
-    title: "How are you planning to use Eden?",
-    subTitle: "We'll streamline your setup experience accordingly.",
-  },
-  {
-    step: 4,
-    title: "Congratulations, Eren!",
-    subTitle: "You have completed onboarding, you can start using the Eden.",
-  },
-];
-
 const OnboardingFormContext = createContext();
 
 export const useOnboardingFormContext = () => useContext(OnboardingFormContext);
@@ -106,7 +83,6 @@ export const OnboardingFormContextProvider = ({ children }) => {
         values,
         handleChange,
         handleKeydown,
-        formHeadingInfo,
         validateFields,
         step,
         errors,
