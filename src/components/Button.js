@@ -1,10 +1,8 @@
 import './Buttons.css'
-import { useThemeContext } from "../hooks/useTheme";
 const SUPPORTED_VARIANTS = ["primary", "block"];
 
 const Button = ({ text, variant, onClick }) => {
-  const { isDarkMode } = useThemeContext();
-  let classNames = [isDarkMode ? "btn dark" : "btn"];
+  let classNames = ["btn"];
   if (variant) {
     const validVariants = variant
       .split(" ")
