@@ -1,5 +1,7 @@
 import { useEffect } from "react";
 import { useOnboardingFormContext } from "../../hooks/useOnboardingForm";
+import SelfIcon from '../../assets/images/self.png';
+import TeamIcon from '../../assets/images/team.png'
 import Button from "../Button";
 
 const Planning = () => {
@@ -29,7 +31,7 @@ const Planning = () => {
             checked={values.usage === "self"}
           />
           <label htmlFor="self">
-            <img src="/images/self.png" alt="self" className="radio-icon" />
+            <img src={SelfIcon} alt="self" className="radio-icon" />
             <div className="title">For myself</div>
             <p className="desc">
               Write better. Think more clearly. Stay organized.
@@ -46,7 +48,7 @@ const Planning = () => {
             checked={values.usage === "team"}
           />
           <label htmlFor="team">
-            <img src="/images/team.png" alt="team" className="radio-icon" />
+            <img src={TeamIcon} alt="team" className="radio-icon" />
             <div className="title">With my team</div>
             <p className="desc">
               Wikis, docs, tasks & projects, all in one place.
