@@ -1,0 +1,46 @@
+.steps-indicator__container {
+    position: relative;
+    margin-bottom: 60px;
+  }
+  
+  .steps-indicator__indicator {
+    display: flex;
+    gap: 60px;
+  }
+  
+  .steps-indicator__progress-bar {
+    width: 90%;
+    height: 1px;
+    background-color: var(--border-color);
+    position: absolute;
+    top: 50%;
+    transform: translate(15px, -50%);
+  }
+  
+  .steps-indicator__progress-bar div {
+    width: 22.5%;
+    transition: width 0.3s ease-in-out;
+    height: 100%;
+    background-color: var(--primary-color);
+  }
+  
+  .indicator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    font-size: 12px;
+    border-radius: 50%;
+    border: 1px solid var(--border-color);
+    background-color: white;
+    z-index: 10;
+  }
+  
+  
+  .indicator.active {
+    color: white;
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    transition: all 0.3s ease-in-out;
+  }

@@ -1,0 +1,82 @@
+.form-container {
+  width: 100%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+  margin-bottom: 20px;
+  max-width: 320px;
+}
+
+.form-group label {
+  font-size: 12px;
+}
+
+.form-group input[type="text"] {
+  outline: none;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  padding: 12px;
+  font-size: 12px;
+}
+
+.form-group input[type="text"]::placeholder {
+  color: var(--light-grey);
+}
+
+.form-group input[type="text"]:focus {
+  outline: 2px solid var(--primary-color);
+}
+
+.radio-group {
+  justify-content: space-between;
+  display: flex;
+  gap: 20px;
+  max-width: 320px;
+}
+
+.radio-group .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.radio-group .form-group input[type="radio"] {
+  display: none;
+}
+
+.radio-group .form-group label {
+  font-size: 12px;
+  border: 1px solid var(--border-color);
+  padding: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.radio-group .form-group label .title {
+  font-weight: bold;
+}
+
+.radio-group .form-group label .desc {
+  color: var(--grey);
+}
+
+.radio-group .form-group input[type="radio"]:checked + label {
+  border: 1px solid var(--primary-color);
+}
+
+.radio-group .form-group label img.radio-icon {
+  width: 20px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.form-error {
+  color: var(--danger);
+  font-size: 14px;
+}
