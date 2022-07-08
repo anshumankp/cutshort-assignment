@@ -40,7 +40,7 @@ export const OnboardingFormContextProvider = ({ children }) => {
       case 1:
         if (values.userName.trim() === "")
           validationErrors.userName = "Username cannot be blank";
-        if (values.displayName === "")
+        if (values.displayName.trim() === "")
           validationErrors.displayName = "Display name cannot be blank";
         break;
       case 2:
@@ -48,7 +48,7 @@ export const OnboardingFormContextProvider = ({ children }) => {
           validationErrors.workspaceName = "You must provide a workspace name";
         break;
       case 3:
-        if (values.usage.trim() === "")
+        if (values.usage === "")
           validationErrors.usage = "Please select an option to proceed";
         break;
       case 4:
